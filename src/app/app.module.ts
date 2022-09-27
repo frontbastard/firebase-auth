@@ -12,13 +12,13 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { SigninComponent } from './components/signin/signin.component';
+import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SigninComponent,
+    LoginComponent,
     SignupComponent,
     DashboardComponent,
   ],
