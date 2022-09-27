@@ -1,1 +1,4 @@
-<p>dashboard works!</p>
+<ng-container *ngIf="authService.isUserLoaded">
+  <p>{{ authService.user.email }}</p>
+</ng-container>
+<button (click)="authService.logoutUser()">Logout</button>

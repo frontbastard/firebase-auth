@@ -1,1 +1,5 @@
-<router-outlet></router-outlet>
+<div class="container" [ngClass]="{ loading: authService.isLoading }">
+  <router-outlet></router-outlet>
+</div>
+
+<p *ngIf="authService.isLoading">Loading...</p>
